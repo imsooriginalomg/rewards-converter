@@ -1,6 +1,5 @@
-import org.junit.jupiter.api.Test;
-
 import static org.junit.jupiter.api.Assertions.assertEquals;
+import org.junit.jupiter.api.Test;
 
 public class RewardValueTests {
 
@@ -9,8 +8,10 @@ public class RewardValueTests {
         double cashValue = 100;
         var rewardValue = new RewardValue(cashValue);
         assertEquals(cashValue, rewardValue.getCashValue());
+        System.out.println(rewardValue.getCashValue());
     }
-
+    
+    
     @Test
     void create_with_miles_value() {
         int milesValue = 10000;
